@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log*
+
+# Local MongoDB data directory (used as a dev fallback when Atlas is unreachable)
+.local-mongo-data/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea

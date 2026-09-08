@@ -1,0 +1,24 @@
+{
+  "name": "miracle-groupe-website",
+  "version": "1.0.0",
+  "description": "Miracle Groupe website — React/Vite frontend, Express/MongoDB backend",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently -n CLIENT,SERVER -c blue,green \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "lint:client": "npm run lint --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "9.2.4"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
